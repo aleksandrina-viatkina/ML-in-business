@@ -28,13 +28,13 @@ tokenize = lambda x: [SnowballStemmer(language="russian").stem(i) for i in word_
 * Создаем образ
 docker build -t classification_comments .
 
-* Создаем контейнер
-docker run -d -p 8183:8183 -v /Users/aleksandrinavatkina/Desktop/GeekBrains/'Машинное обучение в бизнесе'/les9_cp/course_project/app/models:/app/app/models classification_comments
-По его номеру запускаем:
-Находим номер контейнера
-docker ps -a  
-
-Запускаем
-docker logs 0780eb3bc348 
+* Создаем контейнер. 
+docker run -d -p 8183:8183 -v /Users/aleksandrinavatkina/Desktop/GeekBrains/'Машинное обучение в бизнесе'/les9_cp/course_project/app/models:/app/app/models     classification_comments. 
+По его номеру запускаем:  
+Находим номер контейнера. 
+docker ps -a     
+  
+Запускаем. 
+docker logs 0780eb3bc348   
 
 * Запускаем функцию get_prediction() - получаем наш прогноз
