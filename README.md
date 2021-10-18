@@ -1,7 +1,5 @@
 # ML-in-business
 Machine Learning in Business
-# ML-in-business
-Machine Learning in Business
 ____
 # Course project.    
 ____
